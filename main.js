@@ -1,10 +1,43 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+function addMeToEnd(arr){
+  arr.push('Colin')
+}
 
+// =============
+function addMeToStart(arr){
+  arr.unshift('Colin')
+}
+// =======================
+function changeLast(arr ,num){
+  arr[arr.length -1] = num
+}
 
+// ====================
 
+function changeAllValuesTo(arr , num){
+  for( i =0; i < arr.length; i++){
+    arr[i] = num
+  }
+}
 
+// ================
+function oddOrEven(arr){
+  for(i =0; i < arr.length; i++){
+    if(arr[i] % 2== 0){
+      arr[i]= 'even'
+    }else{
+      arr[i]='odd'
+    }
+  }
+}
+// =================
+function changeNextThreeToValue(start , arr ,num){
+  for(i = start; i < start + 3; i++ ){
+    arr[i] =num
+  }
+}
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
